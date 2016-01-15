@@ -1,7 +1,5 @@
 # This is fork of original image running on Oracle JDK
 
-# Official Jenkins Docker image
-
 The Jenkins Continuous Integration and Delivery server.
 
 This is a fully functional Jenkins server, based on the Long Term Support release
