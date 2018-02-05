@@ -1,15 +1,15 @@
 #!/usr/bin/env bats
 
-SUT_IMAGE=bats-jenkins
-SUT_CONTAINER=bats-jenkins
-
 load 'test_helper/bats-support/load'
 load 'test_helper/bats-assert/load'
 load test_helpers
 
+SUT_IMAGE=$(sut_image)
+SUT_CONTAINER=$(sut_image)
+
 @test "build image" {
   cd $BATS_TEST_DIRNAME/..
-  docker build -t $SUT_IMAGE .
+  docker_build -t $SUT_IMAGE .
 }
 
 @test "clean test containers" {
