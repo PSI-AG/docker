@@ -1,4 +1,4 @@
-FROM psiag/oracle-java:8u131
+FROM psiag/oracle-java:8u171
 
 RUN apt-get update && apt-get install -y git curl unzip && rm -rf /var/lib/apt/lists/*
 
